@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useNostrEvents, dateToUnix } from "nostr-react";
-import FundNote from "./FundNote";
+import Note from "./Note";
 
 const FundNotes = () => {
   const now = useRef(new Date()); // Make sure current time isn't re-rendered
@@ -16,7 +16,9 @@ const FundNotes = () => {
   return (
     <div className="FundNotes">
       {events.filter(event => event.content.includes(' ')).map((event) => (
-        <FundNote event={event} />
+        <div key={event.id}>
+          <Note event={event} />
+        </div>
       ))}
     </div>
   );

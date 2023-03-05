@@ -20,6 +20,8 @@ https://github.com/satscoffee/nostr_icons
     - zaps
     - comments
 
+- Post images
+
 - Basic nostr user functionality
     - View user profiles
     - Follow / unfollow users

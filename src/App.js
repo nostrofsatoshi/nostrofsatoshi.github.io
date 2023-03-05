@@ -1,13 +1,15 @@
 import logo from './logo.gif';
 import './App.css';
 import { NostrProvider } from "nostr-react";
-import FundNotes from './FundNotes';
-import PostButton from './Post';
+import Notes from './Notes';
+import Post from './Post';
 
 const relayUrls = [
   "wss://nostr.wine",
   "wss://relay.orangepill.dev",
-  "wss://puravida.nostr.land",
+  "wss://nos.lol",
+  "wss://nostr.milou.lol",
+  "wss://atlas.nostr.land",
 ];
 
 function App() {
@@ -27,12 +29,12 @@ function App() {
             </a>
             OfSatoshi
           </p>
-          <p>
+          <small className='slogan'>
             We are all Satoshi.
-          </p>
-          <PostButton />
+          </small>
+          <Post />
           <div className='FundNotes'>
-            <FundNotes />
+            <Notes />
           </div>
         </header>
       </div>
