@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  width: 3em;
+  height: 3em;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.Post-input {
+  font-size: large;
+  width: 70%;
+  padding: 1em;
+  text-align: center;
+}
+
+.Post-container {
+  display: flex;flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.post-button {
+  font-size: large;
+  padding: 1em;
+  color: white;
+  background-color: #3795BD;
+  border: none;
+  width: 8em;
+  margin-top: 1em;
+}
+
+.menu-icon {
+  height: 1em;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.menu-item {
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: .5em;
+}
+
+.menu-item:hover {
+  color: #9933cc;
+}
+
+.separator {
+  border-bottom: 1px solid black;
+  width: 90%;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5em;
+  position: fixed;
+  border: 2px solid #3A1078;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.Menu-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #3A1078;
+  padding-bottom: 1em;
+}
+
+.menu-container {
+  width: 5%;
+}
+
+.profile-pic {
+  height: 4em;
+  margin-right: 1em;
+  border-radius: 4em;
+  margin-bottom: .5em;
+}
+
+.FundNotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FundNote {
+  width: 70%;
+  margin-top: 2em;
+  border-radius: 1em;
+  font-size: large;
+  padding: 1em;
+  background-color: #3795BD;
+  color: #3A1078;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.FundNote-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.FundNote-body {
+  padding: 1em;
+  padding-top: 0;
+  color: white;
+}
+
+.Event-id {
+  font-size: small;
+}
+
+.Event-created {
+  font-size: small;
+}
+
+.Event-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  text-align: left;
+  width: 90%;
+}
+
+.Event-pubkey {
+  font-size: small;
+}
